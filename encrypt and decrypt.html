@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor/Decryptor</title>
+    <link rel="stylesheet" href="crypto.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryptor/Decryptor</h1>
+
+        <label for="text-to-encrypt">Text to Encrypt:</label>
+        <textarea id="text-to-encrypt" rows="4"></textarea>
+
+        <button onclick="encryptText()">Encrypt</button>
+
+        <label for="encrypted-text">Encrypted Text:</label>
+        <textarea id="encrypted-text" rows="4" readonly></textarea>
+
+        <label for="text-to-decrypt">Text to Decrypt:</label>
+        <textarea id="text-to-decrypt" rows="4"></textarea>
+
+        <button onclick="decryptText()">Decrypt</button>
+
+        <label for="decrypted-text">Decrypted Text:</label>
+        <textarea id="decrypted-text" rows="4" readonly></textarea>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="crypto.js"></script>
+</body>
+</html>
